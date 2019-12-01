@@ -1,0 +1,37 @@
+{
+  "name": "cts-urn",
+  "version": "0.1.0",
+  "description": "A small library for parsing CTS URNs",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "mocha -r ts-node/register test/**/*.test.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pletcher/cts-urn.git"
+  },
+  "keywords": [
+    "cts",
+    "urn",
+    "canonical",
+    "text",
+    "services"
+  ],
+  "author": "Charles Pletcher",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pletcher/cts-urn/issues"
+  },
+  "homepage": "https://github.com/pletcher/cts-urn#readme",
+  "devDependencies": {
+    "@types/chai": "^4.2.5",
+    "@types/mocha": "^5.2.7",
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "ts-node": "^8.5.4",
+    "typescript": "^3.7.2"
+  }
+}
