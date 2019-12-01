@@ -1,7 +1,7 @@
 cts-urn
 ---
 
-A simple library for parsing/serialized ("stringifying") [CTS URNs](http://cite-architecture.org/ctsurn/overview/)
+A simple library for parsing/serializing ("stringifying") [CTS URNs](http://cite-architecture.org/ctsurn/overview/)
 
 # LICENSE
 
