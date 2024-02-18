@@ -58,7 +58,7 @@ export function parseWork(workComponent: string): WorkComponent {
   }
 }
 
-export default function parseUrn(rawUrn: string): URN {
+export function parseUrn(rawUrn: string): URN {
   const [urn, cts, ctsNamespace, work, passage] = rawUrn.split(':')
 
   return {

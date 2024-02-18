@@ -21,7 +21,7 @@ declare interface URN {
 }
 export declare function parsePassage(passage?: string): Passage | undefined;
 export declare function parseWork(workComponent: string): WorkComponent;
-export default function parseUrn(rawUrn: string): URN;
+export declare function parseUrn(rawUrn: string): URN;
 export declare function serializePassage(passage?: Passage): string;
 export declare function serializeWork(workComponent: WorkComponent): string;
 export declare function serializeUrn(urnObj: URN): string;
