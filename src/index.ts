@@ -35,14 +35,14 @@ export function parsePassage(passage?: string): Passage | undefined {
         subRef: fromSubRef,
       },
     }
-  
+
     let to: { ref?: string, subRef?: string } = {}
     if (passageTo) {
       const [toRef, toSubRef] = passageTo.split('@')
       to.ref = toRef
       to.subRef = toSubRef
     }
-    
+
     return ret
   }
 }
@@ -58,7 +58,7 @@ export function parseWork(workComponent: string): WorkComponent {
   }
 }
 
-export function parseUrn(rawUrn: string): URN {
+export default function parseUrn(rawUrn: string): URN {
   const [urn, cts, ctsNamespace, work, passage] = rawUrn.split(':')
 
   return {
@@ -96,7 +96,7 @@ export function serializePassage(passage?: Passage): string {
 
 export function serializeWork(workComponent: WorkComponent): string {
   const { exemplar, textGroup, version, work } = workComponent
-  
+
   let workString = textGroup
   if (work) {
     workString += `.${work}`
@@ -120,5 +120,3 @@ export function serializeUrn(urnObj: URN): string {
 
   return `${urn}:${cts}:${ctsNamespace}:${workString}${passageString}`
 }
-
-export default parseUrn
